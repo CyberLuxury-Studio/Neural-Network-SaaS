@@ -7,11 +7,11 @@ import { Route, BrainCircuit, Lock } from "lucide-react";
 
 export function FeaturesSection() {
   return (
-    <section className="py-32 px-8 bg-void border-t border-surface-variant/30">
+    <section className="py-40 px-8 bg-background relative border-t border-outline-variant/10">
       <div className="container mx-auto">
-        <div className="mb-16">
-          <h2 className="text-3xl font-headline font-bold text-on-surface mb-2 tracking-tight">Core Subsystems</h2>
-          <p className="text-on-surface-variant font-label text-sm uppercase tracking-widest">Active Modules // 03</p>
+        <div className="mb-24 flex flex-col items-center text-center">
+          <p className="text-primary-container font-label text-xs uppercase tracking-[0.3em] mb-4">Core Subsystems</p>
+          <h2 className="text-5xl md:text-6xl font-headline font-bold text-on-surface tracking-tighter">THE VOID ARCHITECTURE</h2>
         </div>
 
         <motion.div
@@ -19,25 +19,25 @@ export function FeaturesSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-3 gap-12"
         >
           <NeonCard
             highlightColor="primary"
-            icon={<Route strokeWidth={1.5} size={36} />}
-            title="Quantum Routing"
-            description="Bypass traditional nodes. Our routing protocol ensures zero-latency data transmission across decentralized sectors."
+            icon={<Route strokeWidth={1} size={48} />}
+            title="QUANTUM ROUTING"
+            description="Instantaneous data transfer across multiple fragmented nodes. Eliminating latency in high-stakes environments."
           />
           <NeonCard
-            highlightColor="secondary"
-            icon={<BrainCircuit strokeWidth={1.5} size={36} />}
-            title="Neural Uplink"
-            description="Direct cognitive interface rendering physical peripherals obsolete. Seamless integration with the user's primary wetware."
+            highlightColor="primary"
+            icon={<BrainCircuit strokeWidth={1} size={48} />}
+            title="NEURAL UPLINK"
+            description="Direct brain-to-machine interfacing. Seamless thought-to-execution rendering for ultimate control."
           />
           <NeonCard
-            highlightColor="tertiary"
-            icon={<Lock strokeWidth={1.5} size={36} />}
-            title="Zero-Trust Protocol"
-            description="Absolute cryptographic isolation. Every interaction is verified, encrypted, and volatile upon session termination."
+            highlightColor="primary"
+            icon={<Lock strokeWidth={1} size={48} />}
+            title="ZERO-TRUST PROTOCOL"
+            description="Absolute cryptographic isolation. Every interaction is verified, encrypted, and immediately volatile upon session termination."
           />
         </motion.div>
       </div>

@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NEON ARISTOCRAT - Cyber-Luxury Landing Page
 
-## Getting Started
+Welcome to **Neon Aristocrat**, a premium "Cyber-Luxury" template designed exclusively for high-end SaaS, Stealth Web3, or Waitlist products.
 
-First, run the development server:
+## Tech Stack
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS (Custom 'Aether Protocol' Theme)
+- **Animation:** Framer Motion (Scroll-triggers & entrance logic)
+- **3D:** `@splinetool/runtime` (Lazy loaded for peak LCP performance)
+- **Icons:** `lucide-react`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Prerequisites
+Ensure you have `Node.js 18+` installed on your machine.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Quick Start
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Install dependencies**
+   `npm install`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Run the development server**
+   `npm run start` (or your preferred dev command)
 
-## Learn More
+3. Open `http://localhost:3000` in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+## Customization Guide
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1. The Design System
+Colors are entirely controlled in `tailwind.config.ts`. The design relies on the **Aether Protocol** aesthetic:
+- **Surface Tonal Layers:** `surface-container-lowest` -> `surface-container-highest` creates depth without relying heavily on harsh borders.
+- **Neon Accents:** `primary-container` (Cyan), `secondary` (Pink/Purple), and `tertiary` (White/Silver) control all CTA elements and glows.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 2. Swapping the 3D Spline Scene
+To add your own 3D scene, open `src/components/sections/HeroSection.tsx`. Find the `SplineScene` component and simply replace the URL prop with your exported `.splinecode` URL.
 
-## Deploy on Vercel
+### 3. Using the Atomic UI Kit
+All reusable components (Buttons, Inputs, Glassmorphic Cards) are neatly organized in `src/components/ui`. You can easily extract these components to construct other pages for your web app.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+*Created for UI8. Enjoy building the future.*
