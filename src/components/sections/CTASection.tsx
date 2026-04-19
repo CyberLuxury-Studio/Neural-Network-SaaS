@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { fadeUpVariant } from "@/lib/motion";
 import { WaitlistInput } from "@/components/ui/WaitlistInput";
 
-export function CtaSection() {
+export function CTASection() {
   return (
     <section className="py-40 px-8 relative overflow-hidden bg-surface-container-lowest">
       {/* Radial Pulse Background */}
