@@ -38,3 +38,13 @@ All reusable components (Buttons, Inputs, Glassmorphic Cards) are neatly organiz
 
 ---
 *Created for UI8. Enjoy building the future.*
+
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
+
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
